@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortavia - Think Beyond AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/logo.svg') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="CORTAVIA Logo" height="40" />
+                    <h1> CORTAVIA</h1>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#technologies" class="nav-link">Technologies</a>
+                    <a href="#industries" class="nav-link">Industries</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">CORTAVIA</h1>
+            <p class="hero-subtitle">Think Beyond AI</p>
+            <p class="hero-description">
+                Pioneering the future of artificial intelligence with cutting-edge GenAI solutions and automation technologies
+            </p>
+            <button class="hero-btn" id="heroBtn">
+                Explore AI Solutions
+                <svg class="hero-btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </button>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Cortavia stands at the forefront of artificial intelligence innovation, specializing in Generative AI and intelligent automation solutions. Our mission is to transform businesses through cutting-edge AI technologies that think beyond conventional boundaries.
+                    </p>
+                    <p class="about-paragraph">
+                        We harness the power of advanced language models, machine learning, and cloud technologies to create intelligent systems that not only automate processes but also augment human capabilities in unprecedented ways.
+                    </p>
+                </div>
+                <div class="leadership-card">
+                    <h3 class="leadership-title">Leadership Team</h3>
+                    <div class="leadership-list">
+                        <div class="leader-item leader-ceo">
+                            <h4 class="leader-name">Suresh Suthar</h4>
+                            <p class="leader-role">CEO & GenAI Engineer</p>
+                        </div>
+                        <div class="leader-item leader-cai">
+                            <h4 class="leader-name">Rajan Fredrick</h4>
+                            <p class="leader-role">Chief AI Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="11" height="10" rx="2" ry="2"></rect>
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="m12 7 0 4"></path>
+                            <line x1="8" y1="16" x2="8" y2="16"></line>
+                            <line x1="16" y1="16" x2="16" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI Chatbots</h3>
+                    <p class="service-desc">Intelligent conversational agents powered by advanced NLP</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6"></path>
+                            <path d="m15.5 3.5-1.5 1.5"></path>
+                            <path d="m10 12-1.5 1.5"></path>
+                            <path d="m15.5 20.5-1.5-1.5"></path>
+                            <path d="m4.5 10.5 1.5 1.5"></path>
+                            <path d="m8.5 8.5 1.5-1.5"></path>
+                            <path d="m8.5 15.5 1.5 1.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Process Automation</h3>
+                    <p class="service-desc">Streamline operations with intelligent workflow automation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="m22 21-3-3m0 0a5.5 5.5 0 1 1-7.8-7.8 5.5 5.5 0 0 1 7.8 7.8Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Multitasking Agents</h3>
+                    <p class="service-desc">AI agents capable of handling multiple complex tasks simultaneously</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Custom LLM Applications</h3>
+                    <p class="service-desc">Tailored large language model solutions for specific business needs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m12 8-9.04 4.52a1 1 0 0 0 0 1.83L12 19l8.04-4.65a1 1 0 0 0 0-1.83L12 8"></path>
+                            <path d="M5.5 13.5v5a1 1 0 0 0 1.5.87L12 17l4.5 2.37a1 1 0 0 0 1.5-.87v-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Voice AI Assistants</h3>
+                    <p class="service-desc">Sophisticated voice-enabled AI systems for hands-free interaction</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Data Analytics</h3>
+                    <p class="service-desc">AI-driven insights and predictive analytics for data-driven decisions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14,2 14,8 20,8"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI Content Generation</h3>
+                    <p class="service-desc">Automated content creation for marketing, documentation, and more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Technologies -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Core Technologies</h2>
+            <div class="tech-grid" id="techGrid">
+                <div class="tech-item">OpenAI</div>
+                <div class="tech-item">LangChain</div>
+                <div class="tech-item">LangGraph</div>
+                <div class="tech-item">Python</div>
+                <div class="tech-item">Flask</div>
+                <div class="tech-item">Azure ML</div>
+                <div class="tech-item">Azure OpenAI</div>
+                <div class="tech-item">Microsoft Graph API</div>
+                <div class="tech-item">Azure Data Factory</div>
+                <div class="tech-item">Azure Blob Storage</div>
+                <div class="tech-item">Azure Cognitive Services</div>
+                <div class="tech-item">Azure Functions</div>
+                <div class="tech-item">Azure Logic Apps</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section id="industries" class="industries">
+        <div class="container">
+            <h2 class="section-title">Industries Served</h2>
+            <div class="industries-grid">
+                <div class="industry-item">
+                    <div class="industry-icon industry-finance">F</div>
+                    <h3 class="industry-name">Finance</h3>
+                </div>
+                <div class="industry-item">
+                    <div class="industry-icon industry-healthcare">H</div>
+                    <h3 class="industry-name">Healthcare</h3>
+                </div>
+                <div class="industry-item">
+                    <div class="industry-icon industry-edtech">E</div>
+                    <h3 class="industry-name">EdTech</h3>
+                </div>
+                <div class="industry-item">
+                    <div class="industry-icon industry-ecommerce">E</div>
+                    <h3 class="industry-name">E-commerce</h3>
+                </div>
+                <div class="industry-item">
+                    <div class="industry-icon industry-saas">S</div>
+                    <h3 class="industry-name">SaaS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="contact-subtitle">Ready to transform your business with AI? Let's discuss your project.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Call Us</h3>
+                        <p class="contact-card-text">+91 9571-130-423</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Email Us</h3>
+                        <p class="contact-card-text">talk.to.cortavia@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Visit Us</h3>
+                        <p class="contact-card-text">We are Everywhere</p>
+                    </div>
+                </div>
+
+        <div class="contact-buttons" >
+            <a href="mailto:talk.to.cortavia@gmail.com?subject=Contact" class="btn-primary">Get in Touch</a>
+            <a href="mailto:talk.to.cortavia@gmail.com?subject=Demo%20Request" class="btn-secondary">Request Demo</a>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title">CORTAVIA</h3>
+                <p class="footer-tagline">Think Beyond AI</p>
+                <p class="footer-copyright">© 2024 Cortavia. All rights reserved. Pioneering the future of artificial intelligence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

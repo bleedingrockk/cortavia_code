@@ -1,5 +1,7 @@
 # Ignore virtual environment
 /cortavia_env/
+.env
+
 
 # Ignore Python cache files
 __pycache__/
